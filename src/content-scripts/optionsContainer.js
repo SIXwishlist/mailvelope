@@ -35,7 +35,7 @@ export default class OptionsContainer {
     var url;
     var options = 'krid=' + encodeURIComponent(this.keyringId) + this.email + this.fullName;
     if (mvelo.crx) {
-      url = mvelo.extension.getURL('app/app.html?' + options + '#keyring');
+      url = mvelo.extension.getURL('app/app.html?' + options + '#/keyring');
     } else if (mvelo.ffa) {
       url = 'about:blank?mvelo=options&' + options + '#keyring';
     }
